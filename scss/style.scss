@@ -1,9 +1,2 @@
-
-
-* {
-    display: block;  
-}
-
-body {
-    background: red;
-}
+@import "./pages/landing/landing_body";
+@import "./pages/landing/landing_nav";

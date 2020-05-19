@@ -1,0 +1,36 @@
+@import '../../abstracts/variables';
+
+.landing-nav-bar {
+    display: block;
+    margin: 0;
+    padding: 2em;
+    width: 100%;
+
+    background-color: lightslategrey;
+
+    .landing-nav-list {
+        display: grid;
+        margin: 0;
+        padding: 0;
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        list-style-type: none;
+         
+        li {
+            background-color: black;
+            margin: 0 20px;
+            a {
+               display: flex;
+               justify-content: center;
+               text-decoration: none;
+               color: white;
+            }
+
+            li:hover {
+                background-color: lightgrey;
+            }
+        }
+    }
+}
