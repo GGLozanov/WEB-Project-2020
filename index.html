@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style_landing.css">
+    <link rel="stylesheet" href="css/styles/style_landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <script>
+        function toggleNavLinks() {
+            var navLinks = document.getElementById("landing-nav-links");
+
+            if (navLinks.style.display === "flex") { // switches to none if already block
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "flex"; // switches to block if already none (literally a toggle function)
+            } // doesn't conflict with flex because user won't switch to new viewports dynamically (and this won't be remembered either way)
+        }
+    </script>
+
     <div class="landing-header">
         <div class="landing-nav">
             <nav class="landing-nav-bar">
-                <ol class="landing-nav-list">
+                <ol class="landing-nav-list" id="landing-nav-links">
                     <li class="landing-nav-element-home"><a href="#">Home</a></li>
                     <li class="landing-nav-element-programming"><a href="#">Programming</a></li>
                     <li class="landing-nav-element-writing"><a href="#">Writing</a></li>
                 </ol>
-                <div class="landing-main-burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <a href="javascript:void(0);" class="landing-burger-menu" onclick="toggleNavLinks()">
+                    <i class="fa-bars"></i>
+                </a>
+                <div class="landing-portfolio-signature">
+                    <p>GLozanov</p>
                 </div>
             </nav>
         </div>

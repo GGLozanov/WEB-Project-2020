@@ -1,5 +1,5 @@
-@import "../../abstracts/variables";
-@import "../../abstracts/mixins";
+@import "../../../abstracts/variables";
+@import "../../../abstracts/mixins";
 
 .landing-nav-bar {
     display: block;
@@ -9,19 +9,25 @@
 
     background: $landing-nav-color;
 
-    @include respond-to-screen-size(med) {
+    @include respond-to-width-screen-size(med) {
         .landing-nav-list {
             position: relative;
             flex-flow: row wrap;
         }
     }
 
-    @include respond-to-screen-size(lg) {
-        width: 75%;            
+    @include respond-to-width-screen-size(lg) {
+        width: 75%;
+        .landing-nav-list {
+            display: flex;
+        }         
     }
 
-    @include respond-to-screen-size(xl) {
-        width: 100%;            
+    @include respond-to-width-screen-size(xl) {
+        width: 100%;
+        .landing-nav-list {
+            display: flex;
+        }         
     }
 
     .landing-nav-list {
@@ -42,19 +48,17 @@
                font-weight: bold;
             }
 
-            @include respond-to-screen-size(xs) {
-                display: none;
-            }
-
-           
-            @include respond-to-screen-size(sm) {
-                display: none;
-            }
-           
-
             &:hover {
                 background-color: $landing-nav-elements-color;
             }
         }
+    }
+
+    .landing-portfolio-signature p {
+        text-align: right;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
     }
 }

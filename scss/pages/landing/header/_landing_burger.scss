@@ -1,0 +1,28 @@
+@import "../../../abstracts/variables";
+@import "../../../abstracts/mixins";
+
+.landing-burger-menu {
+    display: none;
+
+    @include respond-to-width-screen-size(xxxs) {
+        display: block;
+    }
+
+    @include respond-to-width-screen-size(xxs) {
+        display: block;
+    }
+
+    @include respond-to-width-screen-size(xs) {
+        display: block;
+    }
+
+    @include respond-to-width-screen-size(med) {
+        display: block;
+    }
+
+    background: burlywood;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px;
+}

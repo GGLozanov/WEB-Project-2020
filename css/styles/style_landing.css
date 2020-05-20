@@ -19,10 +19,14 @@ body {
       flex-flow: row wrap; } }
   @media (max-width: 60em) {
     .landing-nav-bar {
-      width: 75%; } }
+      width: 75%; }
+      .landing-nav-bar .landing-nav-list {
+        display: flex; } }
   @media (max-width: 87.5em) {
     .landing-nav-bar {
-      width: 100%; } }
+      width: 100%; }
+      .landing-nav-bar .landing-nav-list {
+        display: flex; } }
   .landing-nav-bar .landing-nav-list {
     display: flex;
     padding: 0;
@@ -36,24 +40,31 @@ body {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold; }
-      @media (max-width: 20em) {
-        .landing-nav-bar .landing-nav-list li {
-          display: none; } }
-      @media (max-width: 28em) {
-        .landing-nav-bar .landing-nav-list li {
-          display: none; } }
       .landing-nav-bar .landing-nav-list li:hover {
         background-color: #503d33; }
+  .landing-nav-bar .landing-portfolio-signature p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
 
-.landing-main-burger-menu div {
+.landing-burger-menu {
   display: none;
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0 0; }
-  @media (max-width: 20em) {
-    .landing-main-burger-menu div {
+  background: burlywood;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px; }
+  @media (max-width: 8em) {
+    .landing-burger-menu {
       display: block; } }
-  @media (max-width: 28em) {
-    .landing-main-burger-menu div {
+  @media (max-width: 15em) {
+    .landing-burger-menu {
+      display: block; } }
+  @media (max-width: 20em) {
+    .landing-burger-menu {
+      display: block; } }
+  @media (max-width: 40em) {
+    .landing-burger-menu {
       display: block; } }

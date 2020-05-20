@@ -1,8 +1,8 @@
 @import "./variables";
 @import "./functions";
 
-@mixin respond-to-screen-size($media) {
-    @media (max-width: #{get-size($media)}) {
+@mixin respond-to-width-screen-size($media) {
+    @media (max-width: #{get-width-size($media)}) {
       @content;  
     }
 }
