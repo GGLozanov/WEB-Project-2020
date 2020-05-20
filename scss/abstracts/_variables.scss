@@ -1,5 +1,11 @@
-$landing-bg-color: grey;
+$landing-bg-color: #433c36;
+$landing-nav-color: #4e3b31;
+$landing-nav-elements-color: #503d33;
+
 $screen-sizes: (
-    mobile: 550px,
-    tablet: 900px
+    xl: 87.5em, // 4k and hi-res desktop
+    lg: 60em, // 1080p and hi-res desktops
+    med: 40em, // hi-res tables and low-res laptops
+    sm: 28em, // mobile and low-res tablets
+    xs: 20em // mobile
 );

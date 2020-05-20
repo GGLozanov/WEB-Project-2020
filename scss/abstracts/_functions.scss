@@ -1,0 +1,5 @@
+@import "./variables";
+
+@function get-size($screen-size) {
+    @return map-get($map: $screen-sizes, $key: $screen-size)
+};
