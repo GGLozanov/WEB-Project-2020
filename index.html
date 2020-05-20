@@ -24,9 +24,22 @@
         <div class="landing-nav">
             <nav class="landing-nav-bar">
                 <ol class="landing-nav-list" id="landing-nav-links">
-                    <li class="landing-nav-element-home"><a href="#">Home</a></li>
-                    <li class="landing-nav-element-programming"><a href="#">Programming</a></li>
-                    <li class="landing-nav-element-writing"><a href="#">Writing</a></li>
+                    <li class="landing-nav-element-home">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="landing-nav-element-programming">
+                        <a href="#">Programming &#9660</a>
+                        <ol class="landing-nav-programming-sub-list"> <!--TBA: Dropdown menu-->
+                            <li><a href="#">Projects</a></li>
+                        </ol>
+                    </li>
+                    <li class="landing-nav-element-writing">
+                        <a href="#">Writing &#9660</a>
+                        <ol class="landing-nav-writing-sub-list">
+                            <li><a href="#">Fan Works</a></li>
+                            <li><a href="#">Original Works</a></li>
+                        </ol>
+                    </li>
                 </ol>
                 <a href="javascript:void(0);" class="landing-burger-menu" onclick="toggleNavLinks()">
                     <i class="fa-bars"></i>
@@ -41,7 +54,7 @@
         <div class="landing-main-wrapper">
             <div>
                 <header class="landing-main-header">
-                    <h1>Welcome!</h1>
+                    <h1>Welcome to the portfolio of that one weird guy you always somehow see on the subway...</h1>
                 </header>
                 <article class="landing-main-article">
                     <p>To a world of mystery!</p>
@@ -51,7 +64,7 @@
     </div>
     <div class="landing-footnote">
         <footer class="landing-footer">
-            Copyright Georgi Lozanov 2020   
+            Copyright© Georgi Lozanov 2020   
         </footer>
     </div>
 </body>

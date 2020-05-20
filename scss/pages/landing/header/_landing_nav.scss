@@ -48,8 +48,13 @@
                font-weight: bold;
             }
 
-            &:hover {
-                background-color: $landing-nav-elements-color;
+            ol { // all sublists should be hidden
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+            
+                position: absolute;
+                margin-top: 1rem;
             }
         }
     }
@@ -60,5 +65,37 @@
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
+    }
+}
+
+
+.landing-nav-element-programming {
+    &:hover {
+        background-color: $landing-nav-sub-list-color;
+        .landing-nav-programming-sub-list {
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            flex-flow: column wrap;
+            background: $landing-nav-sub-list-color;         
+            padding-right: 4em;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.landing-nav-element-writing {
+    &:hover {
+        background-color: $landing-nav-sub-list-color;
+        .landing-nav-writing-sub-list {
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            flex-flow: column wrap;
+            background: $landing-nav-sub-list-color;
+            padding-right: 4em;
+        }
     }
 }

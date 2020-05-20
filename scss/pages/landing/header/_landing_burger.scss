@@ -20,6 +20,10 @@
         display: block;
     }
 
+    @include respond-to-width-screen-size(med-lg) {
+        display: block;
+    }
+
     background: burlywood;
     position: absolute;
     top: 0;

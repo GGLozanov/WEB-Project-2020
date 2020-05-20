@@ -40,14 +40,41 @@ body {
         font-size: 20px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bold; }
-      .landing-nav-bar .landing-nav-list li:hover {
-        background-color: #503d33; }
+      .landing-nav-bar .landing-nav-list li ol {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        position: absolute;
+        margin-top: 1rem; }
   .landing-nav-bar .landing-portfolio-signature p {
     text-align: right;
     font-weight: bold;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
+
+.landing-nav-element-programming:hover {
+  background-color: #1b1816; }
+  .landing-nav-element-programming:hover .landing-nav-programming-sub-list {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    background: #1b1816;
+    padding-right: 4em;
+    margin-top: 1rem; }
+
+.landing-nav-element-writing:hover {
+  background-color: #1b1816; }
+  .landing-nav-element-writing:hover .landing-nav-writing-sub-list {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    background: #1b1816;
+    padding-right: 4em; }
 
 .landing-burger-menu {
   display: none;
@@ -66,5 +93,8 @@ body {
     .landing-burger-menu {
       display: block; } }
   @media (max-width: 40em) {
+    .landing-burger-menu {
+      display: block; } }
+  @media (max-width: 53em) {
     .landing-burger-menu {
       display: block; } }

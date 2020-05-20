@@ -1,10 +1,12 @@
 $landing-bg-color: #433c36;
 $landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #503d33;
+$landing-nav-elements-color: #2b241e;
+$landing-nav-sub-list-color: #1b1816;
 
 $screen-width-sizes: (
     xl: 87.5em, // 4k and hi-res desktop
     lg: 60em, // 1080p and hi-res desktops
+    med-lg: 53em, // ni-res laptops and low-res desktops
     med: 40em, // hi-res tables and low-res laptops
     sm: 28em, // mobile and low-res tablets
     xs: 20em, // mobile
