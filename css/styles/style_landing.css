@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden; }
+  box-sizing: border-box; }
 
 body {
   height: 100vh;
@@ -11,7 +10,7 @@ body {
 .landing-nav-bar {
   display: block;
   padding: 1rem;
-  width: 100%;
+  max-width: 100%;
   background: #4e3b31; }
   @media (max-width: 40em) {
     .landing-nav-bar .landing-nav-list {
@@ -44,6 +43,7 @@ body {
         visibility: hidden;
         opacity: 0;
         display: none;
+        list-style-type: none;
         position: absolute;
         margin-top: 1rem; }
   .landing-nav-bar .landing-portfolio-signature p {
@@ -98,3 +98,33 @@ body {
   @media (max-width: 53em) {
     .landing-burger-menu {
       display: block; } }
+
+.landing-main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: 20px;
+  padding-bottom: 100vh;
+  background-color: #927a66;
+  border: double; }
+  .landing-main-wrapper .landing-main-header {
+    text-align: left;
+    font-size: 22px;
+    font-stretch: condensed;
+    margin: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .landing-main-wrapper .landing-main-article {
+    text-align: left;
+    font-size: 22px;
+    font-stretch: ultra-condensed;
+    margin: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+    .landing-main-wrapper .landing-main-article p {
+      padding-bottom: 10px; }
+  .landing-main-wrapper .landing-main-portfolio-image {
+    padding: 40px;
+    max-width: 100%; }

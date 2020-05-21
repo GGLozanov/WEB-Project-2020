@@ -5,7 +5,7 @@
     display: block;
 
     padding: 1rem;
-    width: 100%;
+    max-width: 100%;
 
     background: $landing-nav-color;
 
@@ -52,6 +52,8 @@
                 visibility: hidden;
                 opacity: 0;
                 display: none;
+
+                list-style-type: none;
             
                 position: absolute;
                 margin-top: 1rem;

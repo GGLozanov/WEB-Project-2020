@@ -1,0 +1,42 @@
+@import "../../../abstracts/variables";
+@import "../../../abstracts/mixins";
+
+.landing-main-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 98%;
+    margin: 20px;
+    padding-bottom: 100vh;
+    background-color: $landing-main-color;
+
+    border: double;
+
+    .landing-main-header {
+        text-align: left;
+        font-size: 22px;
+        font-stretch: condensed;
+        margin: 20px;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    .landing-main-article {
+        text-align: left;
+        font-size: 22px;
+        font-stretch: ultra-condensed;
+        margin: 20px;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        p {
+            padding-bottom: 10px;
+        }
+    }
+
+    .landing-main-portfolio-image {
+        padding: 40px;
+        max-width: 100%;
+    }
+}
