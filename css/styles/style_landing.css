@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     flex-flow: column wrap;
     background: #1b1816;
-    padding-right: 4em;
+    padding-right: 5em;
     margin-top: 1rem; }
 
 .landing-nav-element-writing:hover {
@@ -101,13 +101,43 @@ body {
 
 .landing-main-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-flow: column;
   width: 98%;
   margin: 20px;
   padding-bottom: 100vh;
   background-color: #927a66;
-  border: double; }
-  .landing-main-wrapper .landing-main-header {
+  border: double;
+  border-radius: 20px; }
+  .landing-main-wrapper .landing-main-intro {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; }
+    .landing-main-wrapper .landing-main-intro .landing-main-header {
+      text-align: left;
+      font-size: 22px;
+      font-stretch: condensed;
+      margin: 20px;
+      padding: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white; }
+    .landing-main-wrapper .landing-main-intro .landing-main-article {
+      text-align: left;
+      font-size: 23px;
+      font-stretch: ultra-condensed;
+      margin: 20px;
+      padding: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white; }
+      .landing-main-wrapper .landing-main-intro .landing-main-article p {
+        padding-bottom: 10px; }
+    .landing-main-wrapper .landing-main-intro .landing-main-portfolio-image {
+      padding: 40px;
+      max-width: 100%; }
+
+.landing-programming {
+  display: flex;
+  flex-direction: row; }
+  .landing-programming .landing-programming-header {
     text-align: left;
     font-size: 22px;
     font-stretch: condensed;
@@ -115,16 +145,41 @@ body {
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
-  .landing-main-wrapper .landing-main-article {
+  .landing-programming .landing-programming-article {
     text-align: left;
-    font-size: 22px;
+    font-size: 23px;
     font-stretch: ultra-condensed;
     margin: 20px;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
-    .landing-main-wrapper .landing-main-article p {
+    .landing-programming .landing-programming-article p {
       padding-bottom: 10px; }
-  .landing-main-wrapper .landing-main-portfolio-image {
-    padding: 40px;
-    max-width: 100%; }
+
+.landing-writing {
+  display: flex;
+  flex-direction: row; }
+  .landing-writing .landing-writing-header {
+    text-align: left;
+    font-size: 22px;
+    font-stretch: condensed;
+    margin: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .landing-writing .landing-writing-article {
+    text-align: left;
+    font-size: 23px;
+    font-stretch: ultra-condensed;
+    margin: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+    .landing-writing .landing-writing-article p {
+      padding-bottom: 10px; }
+
+.landing-footer {
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; }
