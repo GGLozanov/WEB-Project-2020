@@ -3,21 +3,24 @@
 
 .landing-main-wrapper {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
 
     width: 98%;
     margin: 20px;
-    padding-bottom: 100vh;
     background-color: $landing-main-color;
 
     border: double;
 
     border-radius: 20px;
 
-    .landing-main-intro {
+    .landing-main-content {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+
+        @include respond-to-width-screen-size(lg) {
+            flex-direction: column;
+        }
 
         .landing-main-header {
             text-align: left;
@@ -31,7 +34,7 @@
     
         .landing-main-article {
             text-align: left;
-            font-size: 23px;
+            font-size: 24px;
             font-stretch: ultra-condensed;
             margin: 20px;
             padding: 10px;
@@ -44,7 +47,6 @@
     
         .landing-main-portfolio-image {
             padding: 40px;
-            max-width: 100%;
         }
     }
 }
@@ -53,26 +55,42 @@
 .landing-programming {
     display: flex;
     flex-direction: row;
-    .landing-programming-header {
-        text-align: left;
-        font-size: 22px;
-        font-stretch: condensed;
-        margin: 20px;
-        padding: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
+
+    @include respond-to-width-screen-size(lg) {
+        flex-direction: column;
     }
 
-    .landing-programming-article {
-        text-align: left;
-        font-size: 23px;
-        font-stretch: ultra-condensed;
-        margin: 20px;
-        padding: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        p {
-            padding-bottom: 10px;
+    .landing-programming-content {
+        display: flex;
+        flex-direction: column;
+
+        .landing-programming-header {
+            text-align: left;
+            font-size: 22px;
+            font-stretch: condensed;
+            padding: 10px;
+            margin-left: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .landing-programming-article {
+            text-align: left;
+            font-size: 24px;
+            font-stretch: ultra-condensed;
+            margin: 20px;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            p {
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .landing-programming-image {
+        width: 35%;
+        @include respond-to-width-screen-size(med) {
+            width: 100%;
         }
     }
 }
@@ -80,27 +98,53 @@
 .landing-writing {
     display: flex;
     flex-direction: row;
-    .landing-writing-header {
-        text-align: left;
-        font-size: 22px;
-        font-stretch: condensed;
-        margin: 20px;
-        padding: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        
+
+    @include respond-to-width-screen-size(lg) {
+        flex-direction: column;
     }
 
-    .landing-writing-article {
-        text-align: left;
-        font-size: 23px;
-        font-stretch: ultra-condensed;
-        margin: 20px;
-        padding: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        p {
-            padding-bottom: 10px;
+    .landing-writing-content {
+        display: flex;
+        flex-direction: column;
+
+        .landing-writing-header {
+            text-align: left;
+            font-size: 22px;
+            font-stretch: condensed;
+            margin-left: 20px;
+            @include respond-to-width-screen-size(med) {
+                margin-left: none;
+            }            
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+    
+        }
+        .landing-writing-article {
+            text-align: left;
+            font-size: 24px;
+            font-stretch: ultra-condensed;
+            margin: 20px;
+            padding: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            p {
+                padding-bottom: 10px;
+            }
+        }
+    }
+        
+    .landing-writing-image {
+        width: 35%;
+        @include respond-to-width-screen-size(sm) {
+            width: 95%;
+        }
+        @include respond-to-width-screen-size(med) {
+            width: 100%;
+        }
+        margin: 0px 50px 50px 50px;
+        @include respond-to-width-screen-size(med) {
+            margin: none;
         }
     }
 }
