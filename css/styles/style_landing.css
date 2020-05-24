@@ -1,8 +1,3 @@
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
 * {
   margin: 0;
   padding: 0;
@@ -16,21 +11,6 @@ img {
   height: auto;
   max-width: 100%; }
 
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
 .landing-nav-bar {
   display: block;
   padding: 1rem;
@@ -66,6 +46,8 @@ $landing-main-color: #927a66; */
         list-style-type: none;
         position: absolute;
         margin-top: 1rem; }
+      .landing-nav-bar .landing-nav-list li:hover {
+        background-color: #6F2232; }
   .landing-nav-bar .landing-portfolio-signature p {
     text-align: right;
     font-weight: bold;
@@ -73,44 +55,25 @@ $landing-main-color: #927a66; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
 
-.landing-nav-element-programming:hover {
-  background-color: #6F2232; }
-  .landing-nav-element-programming:hover .landing-nav-programming-sub-list {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    background: #6F2232;
-    padding-right: 5em;
-    margin-top: 1rem; }
+.landing-nav-element-programming:hover .landing-nav-programming-sub-list {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  background: #6F2232;
+  padding-right: 5em;
+  margin-top: 1rem; }
 
-.landing-nav-element-writing:hover {
-  background-color: #6F2232; }
-  .landing-nav-element-writing:hover .landing-nav-writing-sub-list {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column wrap;
-    background: #6F2232;
-    padding-right: 4em; }
+.landing-nav-element-writing:hover .landing-nav-writing-sub-list {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  background: #6F2232;
+  padding-right: 4em; }
 
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
 .landing-burger-menu {
   display: none;
   background: #6F2232;
@@ -134,21 +97,6 @@ $landing-main-color: #927a66; */
     .landing-burger-menu {
       display: block; } }
 
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
 .landing-main-wrapper {
   display: flex;
   flex-direction: column;
@@ -261,11 +209,6 @@ $landing-main-color: #927a66; */
       .landing-writing .landing-writing-image {
         margin: none; } }
 
-/* $landing-bg-color: #433c36;
-$landing-nav-color: #4e3b31;
-$landing-nav-elements-color: #2b241e;
-$landing-nav-sub-list-color: #1b1816;
-$landing-main-color: #927a66; */
 .landing-footer {
   text-align: center;
   font-size: 15px;

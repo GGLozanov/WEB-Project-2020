@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background: #1A1A1D; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.programming-general-nav-bar {
+  display: block;
+  padding: 1rem;
+  max-width: 100%;
+  background: #C3073F; }
+  @media (max-width: 40em) {
+    .programming-general-nav-bar .landing-nav-list {
+      position: relative;
+      flex-flow: row wrap; } }
+  @media (max-width: 60em) {
+    .programming-general-nav-bar {
+      width: 75%; } }
+  @media (max-width: 87.5em) {
+    .programming-general-nav-bar {
+      width: 100%; } }
+  .programming-general-nav-bar .programming-general-nav-list {
+    display: flex;
+    padding: 0;
+    list-style-type: none; }
+    .programming-general-nav-bar .programming-general-nav-list li {
+      margin: 0 20px;
+      padding: 2rem; }
+      .programming-general-nav-bar .programming-general-nav-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold; }
+      .programming-general-nav-bar .programming-general-nav-list li:hover {
+        background-color: #6F2232; }
+  .programming-general-nav-bar .programming-general-portfolio-signature p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+
+.programming-general-main-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  line-height: 40px;
+  padding: 2em;
+  margin: 2em;
+  background-color: #4E4E50; }
+  .programming-general-main-wrapper img {
+    width: 242px;
+    height: 300px;
+    max-width: 100%; }
+  .programming-general-main-wrapper .programming-general-knowledge {
+    display: flex;
+    flex-direction: column;
+    flex: 1; }
+    .programming-general-main-wrapper .programming-general-knowledge .programming-knowledge-main-header {
+      text-align: center;
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white; }
+    .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech-logos {
+      background: #1A1A1D;
+      border: solid;
+      border-radius: 20px;
+      margin: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+    .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-article {
+      text-align: center;
+      font-size: 25px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white; }
+  .programming-general-main-wrapper .programming-general-interests {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-left: solid 10px #1A1A1D; }
+    .programming-general-main-wrapper .programming-general-interests .programming-general-interests-header {
+      text-align: center;
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white; }
+    .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech-logos {
+      background: #1A1A1D;
+      border: solid;
+      border-radius: 20px;
+      margin: 2em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }

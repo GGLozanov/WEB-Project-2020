@@ -1,0 +1,77 @@
+@import "../../../../abstracts/mixins";
+@import "../../../../abstracts/variables";
+
+.programming-general-main-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    line-height: 40px;
+    
+    padding: 2em;
+    margin: 2em;
+
+    background-color: $general-main-color;
+
+    img { 
+        width: 242px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    .programming-general-knowledge {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .programming-knowledge-main-header {
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .programming-general-knowledge-tech-logos {
+            background: $general-bg-color;
+            border: solid;
+            border-radius: 20px;
+            margin: 2em;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .programming-general-knowledge-article {
+            text-align: center;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+    }
+
+    .programming-general-interests {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        border-left: solid 10px $general-bg-color;
+
+        .programming-general-interests-header {
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        .programming-general-interests-tech-logos {
+            background: $general-bg-color;
+            border: solid;
+            border-radius: 20px;
+            margin: 2em;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+
+}
