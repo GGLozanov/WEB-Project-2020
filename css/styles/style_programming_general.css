@@ -50,53 +50,82 @@ img {
 
 .programming-general-main-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   flex: 1;
   line-height: 40px;
   padding: 2em;
-  margin: 2em;
-  background-color: #4E4E50; }
+  margin: 2em; }
   .programming-general-main-wrapper img {
     width: 242px;
     height: 300px;
-    max-width: 100%; }
+    max-width: 100%;
+    transition: width 1s, height 1s; }
+    .programming-general-main-wrapper img:hover {
+      height: 308px; }
+  .programming-general-main-wrapper h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .programming-general-main-wrapper article {
+    text-align: center;
+    font-size: 25px;
+    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
   .programming-general-main-wrapper .programming-general-knowledge {
     display: flex;
-    flex-direction: column;
-    flex: 1; }
-    .programming-general-main-wrapper .programming-general-knowledge .programming-knowledge-main-header {
-      text-align: center;
-      font-size: 30px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: white; }
-    .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech-logos {
-      background: #1A1A1D;
-      border: solid;
-      border-radius: 20px;
-      margin: 2em;
+    flex-flow: column wrap;
+    flex: 1;
+    padding: 2em;
+    background-color: #4E4E50; }
+    .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech {
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly; }
-    .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-article {
-      text-align: center;
-      font-size: 25px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: white; }
+      flex-direction: column; }
+      .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-logos {
+        margin: 2em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly; }
+        @media (max-width: 60em) {
+          .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-logos {
+            flex-flow: column wrap; } }
+      .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-brands {
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 3em;
+        justify-content: space-evenly; }
+        @media (max-width: 60em) {
+          .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-brands {
+            flex-flow: column wrap; } }
+        .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-brands h1 {
+          font-size: 40px; }
   .programming-general-main-wrapper .programming-general-interests {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     flex: 1;
+    padding: 2em;
+    background-color: #4E4E50;
     border-left: solid 10px #1A1A1D; }
-    .programming-general-main-wrapper .programming-general-interests .programming-general-interests-header {
-      text-align: center;
-      font-size: 30px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: white; }
-    .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech-logos {
-      background: #1A1A1D;
-      border: solid;
-      border-radius: 20px;
-      margin: 2em;
+    @media (max-width: 40em) {
+      .programming-general-main-wrapper .programming-general-interests {
+        border-left: none; } }
+    .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech {
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly; }
+      flex-direction: column; }
+      .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-logos {
+        margin: 2em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly; }
+        @media (max-width: 60em) {
+          .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-logos {
+            flex-flow: column wrap; } }
+      .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-brands {
+        margin-left: 4em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly; }
+        @media (max-width: 60em) {
+          .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-brands {
+            flex-flow: column wrap; } }

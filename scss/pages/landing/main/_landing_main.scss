@@ -1,11 +1,31 @@
 @import "../../../abstracts/variables";
 @import "../../../abstracts/mixins";
 
+h1 {
+    text-align: left;
+    font-size: 50px;
+
+    @include respond-to-width-screen-size(med) {
+        font-size: 22px;
+    }
+
+    font-stretch: condensed;
+    padding: 10px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
 .landing-main-wrapper {
     display: flex;
     flex-direction: column;
 
     width: 98%;
+
+    @include respond-to-width-screen-size(med) {
+        width: 90%;
+    }
+
     margin: 20px;
     background-color: $general-main-color;
 
@@ -23,13 +43,7 @@
         }
 
         .landing-main-header {
-            text-align: left;
-            font-size: 22px;
-            font-stretch: condensed;
-            margin: 20px;
             padding: 10px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
         }
     
         .landing-main-article {
@@ -64,16 +78,6 @@
         display: flex;
         flex-direction: column;
 
-        .landing-programming-header {
-            text-align: left;
-            font-size: 22px;
-            font-stretch: condensed;
-            padding: 10px;
-            margin-left: 20px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
-        }
-
         .landing-programming-article {
             text-align: left;
             font-size: 24px;
@@ -89,7 +93,7 @@
     }
     .landing-programming-image {
         width: 35%;
-        @include respond-to-width-screen-size(med) {
+        @include respond-to-width-screen-size(xl) {
             width: 100%;
         }
     }
@@ -108,17 +112,9 @@
         flex-direction: column;
 
         .landing-writing-header {
-            text-align: left;
-            font-size: 22px;
-            font-stretch: condensed;
-            margin-left: 20px;
             @include respond-to-width-screen-size(med) {
                 margin-left: none;
             }            
-            padding: 10px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
-    
         }
         .landing-writing-article {
             text-align: left;
@@ -137,10 +133,10 @@
     .landing-writing-image {
         width: 35%;
         @include respond-to-width-screen-size(sm) {
-            width: 95%;
+            width: 80%;
         }
-        @include respond-to-width-screen-size(med) {
-            width: 100%;
+        @include respond-to-width-screen-size(xl) {
+            width: 85%;
         }
         margin: 0px 50px 50px 50px;
         @include respond-to-width-screen-size(med) {

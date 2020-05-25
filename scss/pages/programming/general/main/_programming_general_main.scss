@@ -3,74 +3,115 @@
 
 .programming-general-main-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     flex: 1;
     line-height: 40px;
     
     padding: 2em;
     margin: 2em;
 
-    background-color: $general-main-color;
-
     img { 
         width: 242px;
         height: 300px;
         max-width: 100%;
+        transition: width 1s, height 1s;
+
+        &:hover {
+            height: 308px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    article {
+        text-align: center;
+        font-size: 25px;
+        padding: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
     }
 
     .programming-general-knowledge {
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
         flex: 1;
+        padding: 2em;
+        background-color: $general-main-color;
 
-        .programming-knowledge-main-header {
-            text-align: center;
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
-        }
-
-        .programming-general-knowledge-tech-logos {
-            background: $general-bg-color;
-            border: solid;
-            border-radius: 20px;
-            margin: 2em;
-
+        .programming-general-knowledge-tech {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
+            flex-direction: column;
 
-        .programming-general-knowledge-article {
-            text-align: center;
-            font-size: 25px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
+            .programming-general-knowledge-tech-logos {
+                margin: 2em;
+
+                display: flex;
+                flex-flow: row wrap;
+                @include respond-to-width-screen-size(lg) {
+                    flex-flow: column wrap;
+                }
+                justify-content: space-evenly;
+            }
+
+            .programming-general-knowledge-tech-brands {
+                display: flex;
+                flex-flow: row wrap;
+                margin-left: 3em;
+
+                @include respond-to-width-screen-size(lg) {
+                    flex-flow: column wrap;
+                }
+                justify-content: space-evenly;
+
+                h1 {
+                    font-size: 40px;
+                }
+            } 
         }
     }
 
     .programming-general-interests {
         display: flex;
-        flex-direction: column;
+        flex-flow: column wrap;
         flex: 1;
-        border-left: solid 10px $general-bg-color;
+        padding: 2em;
+        background-color: $general-main-color;
 
-        .programming-general-interests-header {
-            text-align: center;
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: white;
+        border-left: solid 10px $general-bg-color;
+        @include respond-to-width-screen-size(med) {
+            border-left: none;
         }
 
-        .programming-general-interests-tech-logos {
-            background: $general-bg-color;
-            border: solid;
-            border-radius: 20px;
-            margin: 2em;
-
+        .programming-general-interests-tech {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            flex-direction: column;
+
+            .programming-general-interests-tech-logos {
+                margin: 2em;
+
+                display: flex;
+                flex-flow: row wrap;
+                @include respond-to-width-screen-size(lg) {
+                    flex-flow: column wrap;
+                }
+                justify-content: space-evenly;
+            }
+            
+            .programming-general-interests-tech-brands {
+                margin-left: 4em;
+
+                display: flex;
+                flex-flow: row wrap;
+                @include respond-to-width-screen-size(lg) {
+                    flex-flow: column wrap;
+                }
+                justify-content: space-evenly;
+            } 
         }
     }
 
