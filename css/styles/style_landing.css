@@ -28,10 +28,10 @@ img {
       width: 100%; } }
   .landing-nav-bar .landing-nav-list {
     display: flex;
-    padding: 0;
+    padding: 0px;
     list-style-type: none; }
     .landing-nav-bar .landing-nav-list li {
-      margin: 0 20px;
+      margin: 0px 20px;
       padding: 2rem; }
       .landing-nav-bar .landing-nav-list li a {
         text-decoration: none;
@@ -59,7 +59,6 @@ img {
   visibility: visible;
   opacity: 1;
   display: flex;
-  flex-direction: column;
   flex-flow: column wrap;
   background: #6F2232;
   padding-right: 5em;
@@ -69,10 +68,19 @@ img {
   visibility: visible;
   opacity: 1;
   display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
+  flex-flow: column;
   background: #6F2232;
   padding-right: 4em; }
+  .landing-nav-element-writing:hover .landing-nav-writing-sub-list:hover .landing-nav-fan-writing-sub-list {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-flow: column wrap;
+    background: #341018;
+    padding-right: 4em;
+    margin-left: 250px; }
+    .landing-nav-element-writing:hover .landing-nav-writing-sub-list:hover .landing-nav-fan-writing-sub-list li:hover {
+      background: #341018; }
 
 .landing-burger-menu {
   display: none;
