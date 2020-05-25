@@ -55,6 +55,10 @@ img {
   line-height: 40px;
   padding: 2em;
   margin: 2em; }
+  @media (max-width: 40em) {
+    .programming-general-main-wrapper {
+      padding: 0px;
+      margin: 1em 1em 0px 1em; } }
   .programming-general-main-wrapper img {
     width: 242px;
     height: 300px;
@@ -66,7 +70,8 @@ img {
     text-align: center;
     font-size: 45px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white; }
+    color: white;
+    margin-bottom: 1em; }
   .programming-general-main-wrapper article {
     text-align: center;
     font-size: 25px;
@@ -87,7 +92,7 @@ img {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly; }
-        @media (max-width: 60em) {
+        @media (max-width: 40em) {
           .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-logos {
             flex-flow: column wrap; } }
       .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-brands {
@@ -95,7 +100,7 @@ img {
         flex-flow: row wrap;
         margin-left: 3em;
         justify-content: space-evenly; }
-        @media (max-width: 60em) {
+        @media (max-width: 40em) {
           .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-brands {
             flex-flow: column wrap; } }
         .programming-general-main-wrapper .programming-general-knowledge .programming-general-knowledge-tech .programming-general-knowledge-tech-brands h1 {
@@ -118,7 +123,7 @@ img {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly; }
-        @media (max-width: 60em) {
+        @media (max-width: 40em) {
           .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-logos {
             flex-flow: column wrap; } }
       .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-brands {
@@ -126,6 +131,12 @@ img {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly; }
-        @media (max-width: 60em) {
+        @media (max-width: 40em) {
           .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-brands {
             flex-flow: column wrap; } }
+
+.programming-general-footer {
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; }

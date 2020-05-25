@@ -10,6 +10,11 @@
     padding: 2em;
     margin: 2em;
 
+    @include respond-to-width-screen-size(med) {
+        padding: 0px;
+        margin: 1em 1em 0px 1em;
+    }
+
     img { 
         width: 242px;
         height: 300px;
@@ -26,6 +31,7 @@
         font-size: 45px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
+        margin-bottom: 1em;
     }
 
     article {
@@ -52,7 +58,7 @@
 
                 display: flex;
                 flex-flow: row wrap;
-                @include respond-to-width-screen-size(lg) {
+                @include respond-to-width-screen-size(med) {
                     flex-flow: column wrap;
                 }
                 justify-content: space-evenly;
@@ -63,7 +69,7 @@
                 flex-flow: row wrap;
                 margin-left: 3em;
 
-                @include respond-to-width-screen-size(lg) {
+                @include respond-to-width-screen-size(med) {
                     flex-flow: column wrap;
                 }
                 justify-content: space-evenly;
@@ -96,7 +102,7 @@
 
                 display: flex;
                 flex-flow: row wrap;
-                @include respond-to-width-screen-size(lg) {
+                @include respond-to-width-screen-size(med) {
                     flex-flow: column wrap;
                 }
                 justify-content: space-evenly;
@@ -107,7 +113,7 @@
 
                 display: flex;
                 flex-flow: row wrap;
-                @include respond-to-width-screen-size(lg) {
+                @include respond-to-width-screen-size(med) {
                     flex-flow: column wrap;
                 }
                 justify-content: space-evenly;

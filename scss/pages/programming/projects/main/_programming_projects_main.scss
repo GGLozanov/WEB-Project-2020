@@ -1,2 +1,92 @@
 @import "../../../../abstracts/mixins";
 @import "../../../../abstracts/variables";
+
+.programming-projects-main-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
+    div {
+        padding: 1em;
+        margin: 1em;
+
+        @include respond-to-width-screen-size(med) {
+            padding: 0px;
+            margin: 1em 1em 0px 1em;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    article {
+        text-align: center;
+        font-size: 25px;
+        padding: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    .programming-projects-titular {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+
+        div {
+            display: flex;
+            flex-flow: column wrap;
+
+            background: $general-card-color;
+            padding: 1em;
+        }
+
+        .programming-projects-tuespairs {
+            * {
+                align-self: center;
+                padding: 10px;
+            }
+            h1 {
+                color: black;
+            }
+        
+            article {
+                color: black;
+                padding: 0px 10em 0px 10em;
+            }
+        }
+    }
+
+    .programming-projects-secondary {
+        display: flex;
+        flex-direction: row;
+        @include respond-to-width-screen-size(med) {
+            flex-flow: column wrap;
+        }
+        justify-content: space-evenly;
+
+        background: $general-main-color;
+
+        padding: 2em;
+        margin: 4em;
+
+        .programming-projects-cipherhub {
+            
+            .programming-projects-cipherhub-logo {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        .programming-projects-hacktues {
+            
+            border-left: solid 10px $general-bg-color;
+            @include respond-to-width-screen-size(med) {
+                border-left: none;
+            }
+        }
+    }
+}
