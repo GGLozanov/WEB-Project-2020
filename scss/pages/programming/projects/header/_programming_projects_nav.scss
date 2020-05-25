@@ -3,11 +3,13 @@
 
 .programming-projects-nav-bar {
     display: block;
-    
+    overflow-x: hidden;
+
     padding: 1rem;
     max-width: 100%;
  
     background: $general-nav-color;
+
 
     @include respond-to-width-screen-size(med) {
         .landing-nav-list {

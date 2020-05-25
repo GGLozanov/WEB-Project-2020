@@ -13,6 +13,7 @@ img {
 
 .programming-general-nav-bar {
   display: block;
+  overflow-x: hidden;
   padding: 1rem;
   max-width: 100%;
   background: #C3073F; }
