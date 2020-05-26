@@ -104,6 +104,16 @@
                     padding-right: 4em;
                     margin-left: 250px;
 
+                    @include respond-to-width-screen-size(med) {
+                        margin: 0px;
+                        padding-right: 1em;
+                    }
+
+                    @include respond-to-width-screen-size(llg) {
+                        margin: 0px;
+                        padding-right: 0px;
+                    }
+
                     li {
                         &:hover {
                             background: $general-nav-sub-sub-list-color;

@@ -79,6 +79,14 @@ img {
     background: #341018;
     padding-right: 4em;
     margin-left: 250px; }
+    @media (max-width: 40em) {
+      .landing-nav-element-writing:hover .landing-nav-writing-sub-list:hover .landing-nav-fan-writing-sub-list {
+        margin: 0px;
+        padding-right: 1em; } }
+    @media (max-width: 70em) {
+      .landing-nav-element-writing:hover .landing-nav-writing-sub-list:hover .landing-nav-fan-writing-sub-list {
+        margin: 0px;
+        padding-right: 0px; } }
     .landing-nav-element-writing:hover .landing-nav-writing-sub-list:hover .landing-nav-fan-writing-sub-list li:hover {
       background: #341018; }
 

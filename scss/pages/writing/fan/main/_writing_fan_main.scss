@@ -24,7 +24,12 @@
 
 
     .writing-fan-header {
-        font-size: 40px;
+        font-size: 55px;
+        
+        @include respond-to-width-screen-size(lg) {
+            font-size: 25px;
+        }
+
         color: white;
         text-align: center;
     }
@@ -32,6 +37,11 @@
     .writing-fan-sources-logos {
         display: flex;
         flex-flow: row wrap;
+
+        @include respond-to-width-screen-size(sm) {
+            flex-direction: column;
+        }
+
         justify-content: center;
 
         img {
@@ -40,6 +50,10 @@
 
             width: 300px;
             height: 250px;
+
+            @include respond-to-width-screen-size(lg) {
+                margin: 0px;
+            }
 
             transition: width 1s, height 1s;
 
@@ -53,6 +67,11 @@
     .writing-fan-article {
         font-size: 35px;
         padding: 1em;
+
+        @include respond-to-width-screen-size(lg) {
+            font-size: 25px;
+        }
+
         color: white;
         text-align: center;
     }
@@ -60,6 +79,11 @@
     .writing-fan-fic-showcase {
         display: flex;
         flex-direction: row;
+
+        @include respond-to-width-screen-size(lg) {
+            flex-direction: column;
+        }
+
         justify-content: space-evenly;
         border-radius: 10px;
 
@@ -67,22 +91,41 @@
 
         h1 {
             font-size: 75px;
+            padding: 10px;
+
+            @include respond-to-width-screen-size(lg) {
+                font-size: 35px;
+                padding: 0px;
+                font-family: none;
+            }
             color: white;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding: 10px;
         }
 
         h2 {
             font-size: 45px;
+            padding: 3px;
+            
+            @include respond-to-width-screen-size(lg) {
+                font-size: 25px;
+                padding: 0px;
+                font-family: none;
+            }
+
             color: white;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding: 3px;
         }
 
         article {
             font-size: 25px;
+
+            @include respond-to-width-screen-size(lg) {
+                font-size: 15px;
+                font-family: none;
+            }
+
             color: white;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -92,40 +135,9 @@
             padding: 1em;
         }
 
-        .writing-fan-oneshot-showcase {
+        & > div {
             padding: 2em;
             margin: 1em;
-            
-            .writing-fan-oneshot-header {
-       
-            }
-
-            .writing-fan-ALWUT-showcase {
-                .writing-fan-ALWUT-image {
-
-                }
-            }
-
-            .writing-fan-AFtBY-showcase {
-                .writing-fan-AfTBY-image {
-
-                }
-            }
-        }
-
-        .writing-fan-longifc-showcase {
-            padding: 2em;
-            margin: 1em;
-
-            .writing-fan-longfic-header {
-            
-            }
-    
-            .writing-fan-AUA-showcase {
-                .writing-fan-AUA-showcase {
-                    
-                }
-            }
         }
     }
 }
