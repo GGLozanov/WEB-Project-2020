@@ -89,9 +89,11 @@
             visibility: visible;
             opacity: 1;
             display: flex;
-            flex-flow: column;
+            flex-flow: column wrap;
             background: $general-nav-sub-list-color;
             padding-right: 4em;
+            
+
             &:hover {
                 .landing-nav-fan-writing-sub-list {
                     visibility: visible;

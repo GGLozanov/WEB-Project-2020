@@ -10,3 +10,118 @@ body {
 img {
   height: auto;
   max-width: 100%; }
+
+.writing-fan-nav-bar {
+  display: block;
+  overflow-x: hidden;
+  padding: 1rem;
+  max-width: 100%;
+  background: #C3073F; }
+  @media (max-width: 40em) {
+    .writing-fan-nav-bar .writing-fan-nav-list {
+      position: relative;
+      flex-flow: row wrap; } }
+  @media (max-width: 60em) {
+    .writing-fan-nav-bar {
+      width: 75%; } }
+  @media (max-width: 87.5em) {
+    .writing-fan-nav-bar {
+      width: 100%; } }
+  .writing-fan-nav-bar .writing-fan-nav-list {
+    display: flex;
+    padding: 0;
+    list-style-type: none; }
+    .writing-fan-nav-bar .writing-fan-nav-list li {
+      margin: 0 20px;
+      padding: 2rem; }
+      .writing-fan-nav-bar .writing-fan-nav-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold; }
+      .writing-fan-nav-bar .writing-fan-nav-list li:hover {
+        background-color: #6F2232; }
+  .writing-fan-nav-bar .writing-fan-portfolio-signature p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+
+.writing-fan-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  padding: 2em;
+  margin: 2em;
+  border: solid 10px;
+  background-color: #341018; }
+  .writing-fan-main-wrapper hr {
+    display: block;
+    overflow: hidden;
+    margin: 3em;
+    height: 1vh;
+    background: black;
+    border-radius: 10px;
+    border-color: black; }
+  .writing-fan-main-wrapper .writing-fan-header {
+    font-size: 40px;
+    color: white;
+    text-align: center; }
+  .writing-fan-main-wrapper .writing-fan-sources-logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .writing-fan-main-wrapper .writing-fan-sources-logos img {
+      display: block;
+      margin: 0 4em;
+      width: 300px;
+      height: 250px;
+      transition: width 1s, height 1s; }
+      .writing-fan-main-wrapper .writing-fan-sources-logos img:hover {
+        width: 310px;
+        height: 255px; }
+  .writing-fan-main-wrapper .writing-fan-article {
+    font-size: 35px;
+    padding: 1em;
+    color: white;
+    text-align: center; }
+  .writing-fan-main-wrapper .writing-fan-fic-showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background: #18070a; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase h1 {
+      font-size: 75px;
+      color: white;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 10px; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase h2 {
+      font-size: 45px;
+      color: white;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 3px; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase article {
+      font-size: 25px;
+      color: white;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase img {
+      padding: 1em; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-oneshot-showcase {
+      padding: 2em;
+      margin: 1em; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-longifc-showcase {
+      padding: 2em;
+      margin: 1em; }
+
+.writing-fan-footer {
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; }

@@ -1,0 +1,60 @@
+@import "../../../../abstracts/mixins";
+@import "../../../../abstracts/variables";
+
+.writing-original-nav-bar {
+    display: block;
+    overflow-x: hidden;
+
+    padding: 1rem;
+    max-width: 100%;
+ 
+    background: $general-nav-color;
+
+
+    @include respond-to-width-screen-size(med) {
+        .writing-original-nav-list {
+            position: relative;
+            flex-flow: row wrap;
+        }
+    }
+
+    @include respond-to-width-screen-size(lg) {
+        width: 75%;       
+    }
+
+    @include respond-to-width-screen-size(xl) {
+        width: 100%; 
+    }
+
+    .writing-original-nav-list {
+        display: flex;
+        padding: 0;
+    
+        list-style-type: none;
+         
+        li {
+            margin: 0 20px;
+            padding: 2rem;
+
+            a {
+               text-decoration: none;
+               color: white;
+               font-size: 20px;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+               font-weight: bold;
+            }
+
+            &:hover {
+                background-color: $general-nav-sub-list-color;
+            }
+        }
+    }
+
+    .writing-original-portfolio-signature p {
+        text-align: right;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+}

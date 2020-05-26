@@ -68,7 +68,7 @@ img {
   visibility: visible;
   opacity: 1;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   background: #6F2232;
   padding-right: 4em; }
   .landing-nav-element-writing:hover .landing-nav-writing-sub-list:hover .landing-nav-fan-writing-sub-list {

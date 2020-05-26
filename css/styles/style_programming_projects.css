@@ -103,6 +103,8 @@ img {
     .programming-projects-main-wrapper .programming-projects-titular .programming-projects-tuespairs .programming-projects-tuespairs-images {
       display: flex;
       flex-direction: row; }
+      .programming-projects-main-wrapper .programming-projects-titular .programming-projects-tuespairs .programming-projects-tuespairs-images img {
+        border-radius: 5%; }
       .programming-projects-main-wrapper .programming-projects-titular .programming-projects-tuespairs .programming-projects-tuespairs-images .programming-projects-tuespairs-web-image {
         width: 1100px;
         height: 800px; }

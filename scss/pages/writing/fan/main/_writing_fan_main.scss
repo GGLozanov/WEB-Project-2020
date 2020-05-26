@@ -1,0 +1,131 @@
+@import "../../../../abstracts/variables";
+@import "../../../../abstracts/mixins";
+
+.writing-fan-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+
+    padding: 2em;
+    margin: 2em;
+    border: solid 10px;
+    background-color: $general-nav-sub-sub-list-color;
+
+    hr {
+        display: block; 
+        overflow: hidden; 
+        margin: 3em;
+        height: 1vh;
+        background: black;
+        border-radius: 10px;
+        border-color: black;
+    }
+
+
+    .writing-fan-header {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+
+    .writing-fan-sources-logos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        img {
+            display: block;
+            margin: 0 4em;
+
+            width: 300px;
+            height: 250px;
+
+            transition: width 1s, height 1s;
+
+            &:hover {
+                width: 310px;
+                height: 255px;
+            }
+        }
+    }
+
+    .writing-fan-article {
+        font-size: 35px;
+        padding: 1em;
+        color: white;
+        text-align: center;
+    }
+
+    .writing-fan-fic-showcase {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 10px;
+
+        background: $general-nav-sub-sub-sub-list-color;
+
+        h1 {
+            font-size: 75px;
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 45px;
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 3px;
+        }
+
+        article {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        img {
+            padding: 1em;
+        }
+
+        .writing-fan-oneshot-showcase {
+            padding: 2em;
+            margin: 1em;
+            
+            .writing-fan-oneshot-header {
+       
+            }
+
+            .writing-fan-ALWUT-showcase {
+                .writing-fan-ALWUT-image {
+
+                }
+            }
+
+            .writing-fan-AFtBY-showcase {
+                .writing-fan-AfTBY-image {
+
+                }
+            }
+        }
+
+        .writing-fan-longifc-showcase {
+            padding: 2em;
+            margin: 1em;
+
+            .writing-fan-longfic-header {
+            
+            }
+    
+            .writing-fan-AUA-showcase {
+                .writing-fan-AUA-showcase {
+                    
+                }
+            }
+        }
+    }
+}

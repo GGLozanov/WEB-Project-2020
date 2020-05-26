@@ -80,6 +80,10 @@
                 display: flex;
                 flex-direction: row;
 
+                img {
+                    border-radius: 5%;
+                }
+
                 .programming-projects-tuespairs-web-image {
                     width: 1100px;
                     height: 800px;

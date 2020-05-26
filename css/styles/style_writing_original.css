@@ -10,3 +10,47 @@ body {
 img {
   height: auto;
   max-width: 100%; }
+
+.writing-original-nav-bar {
+  display: block;
+  overflow-x: hidden;
+  padding: 1rem;
+  max-width: 100%;
+  background: #C3073F; }
+  @media (max-width: 40em) {
+    .writing-original-nav-bar .writing-original-nav-list {
+      position: relative;
+      flex-flow: row wrap; } }
+  @media (max-width: 60em) {
+    .writing-original-nav-bar {
+      width: 75%; } }
+  @media (max-width: 87.5em) {
+    .writing-original-nav-bar {
+      width: 100%; } }
+  .writing-original-nav-bar .writing-original-nav-list {
+    display: flex;
+    padding: 0;
+    list-style-type: none; }
+    .writing-original-nav-bar .writing-original-nav-list li {
+      margin: 0 20px;
+      padding: 2rem; }
+      .writing-original-nav-bar .writing-original-nav-list li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold; }
+      .writing-original-nav-bar .writing-original-nav-list li:hover {
+        background-color: #6F2232; }
+  .writing-original-nav-bar .writing-original-portfolio-signature p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+
+.writing-original-footer {
+  text-align: center;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white; }
