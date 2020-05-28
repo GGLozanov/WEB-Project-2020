@@ -1,6 +1,55 @@
 @import "../../../../abstracts/mixins";
 @import "../../../../abstracts/variables";
 
-.writing-original-main-wrapper {
+.writing-original-main {
+
+    background: $general-nav-sub-sub-list-color;
+    border: solid 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
+    h1 {
+        font-size: 45px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    article {
+        text-align: center;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+    }
+
+    .writing-original-main-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+        margin: 1em;
+        padding: 2em;
+    
+        border-radius: 10px;            
+        background: $general-main-color;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            margin: 3em;
+    
+            a {
+                margin: 1em;
+            }
+    
+            img {
+                max-width: 100%;
+            }
+    
+        }
+    }
 }

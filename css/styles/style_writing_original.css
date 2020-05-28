@@ -49,6 +49,40 @@ img {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
 
+.writing-original-main {
+  background: #341018;
+  border: solid 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  .writing-original-main h1 {
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .writing-original-main article {
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .writing-original-main .writing-original-main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 10px;
+    background: #4E4E50; }
+    .writing-original-main .writing-original-main-wrapper div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 3em; }
+      .writing-original-main .writing-original-main-wrapper div a {
+        margin: 1em; }
+      .writing-original-main .writing-original-main-wrapper div img {
+        max-width: 100%; }
+
 .writing-original-footer {
   text-align: center;
   font-size: 15px;
