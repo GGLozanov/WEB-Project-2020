@@ -55,9 +55,11 @@ img {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding: 1em;
+  margin: 2em; }
   .writing-original-main h1 {
-    font-size: 45px;
+    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
   .writing-original-main article {
@@ -65,23 +67,50 @@ img {
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
+  .writing-original-main .writing-original-header {
+    font-size: 50px;
+    text-align: start;
+    color: white;
+    margin: 1em; }
+  .writing-original-main .writing-original-main-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; }
+    .writing-original-main .writing-original-main-article .writing-original-article {
+      text-align: start;
+      font-size: 30px;
+      padding: 0 2em 2em 1em;
+      margin-right: 1em; }
+    .writing-original-main .writing-original-main-article img {
+      display: block;
+      max-width: 100%;
+      width: 600px;
+      height: 200px;
+      padding-right: 1em; }
   .writing-original-main .writing-original-main-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 1em;
-    padding: 2em;
+    padding: 0 1em;
+    border: solid 10px;
     border-radius: 10px;
-    background: #4E4E50; }
+    background: #193c37; }
     .writing-original-main .writing-original-main-wrapper div {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      margin: 3em; }
+      margin: 0 3em 3em 3em; }
       .writing-original-main .writing-original-main-wrapper div a {
-        margin: 1em; }
+        margin-bottom: 1em; }
       .writing-original-main .writing-original-main-wrapper div img {
-        max-width: 100%; }
+        max-width: 100%;
+        padding: 1em; }
+    .writing-original-main .writing-original-main-wrapper .writing-original-prompts-header {
+      text-align: center; }
+    .writing-original-main .writing-original-main-wrapper .writing-original-prompt-sources-header {
+      margin-top: 2em;
+      padding: 1em; }
 
 .writing-original-footer {
   text-align: center;

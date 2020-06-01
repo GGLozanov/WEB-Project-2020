@@ -10,9 +10,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    padding: 1em;
+    margin: 2em;
     
     h1 {
-        font-size: 45px;
+        font-size: 40px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
     }
@@ -24,32 +27,71 @@
         color: white;
     }
 
+    .writing-original-header {
+        font-size: 50px;
+        text-align: start;
+        color: white;
+        margin: 1em;
+    }
+
+    .writing-original-main-article {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+
+        .writing-original-article {
+            text-align: start;
+            font-size: 30px;
+            padding: 0 2em 2em 1em;
+            margin-right: 1em;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            width: 600px;
+            height: 200px;
+            padding-right: 1em;
+        }
+    }
+
     .writing-original-main-wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     
         margin: 1em;
-        padding: 2em;
+        padding: 0 1em;
     
-        border-radius: 10px;            
-        background: $general-main-color;
+        border: solid 10px;
+        border-radius: 10px;
+        background: $secondary-card-color;
 
         div {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             
-            margin: 3em;
+            margin: 0 3em 3em 3em;
     
             a {
-                margin: 1em;
+                margin-bottom: 1em;
             }
     
             img {
                 max-width: 100%;
+                padding: 1em;
             }
-    
+
+        }   
+
+        .writing-original-prompts-header {
+            text-align: center;
+        }
+
+        .writing-original-prompt-sources-header {
+            margin-top: 2em;
+            padding: 1em;
         }
     }
 }
