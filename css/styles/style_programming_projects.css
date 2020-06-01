@@ -73,6 +73,8 @@ img {
     padding: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
+    .programming-projects-main-wrapper article p {
+      margin: 1em; }
   .programming-projects-main-wrapper .programming-projects-titular {
     display: flex;
     flex-flow: column wrap;

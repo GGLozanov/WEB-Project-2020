@@ -100,6 +100,8 @@ img {
     @media (max-width: 60em) {
       .writing-fan-main-wrapper .writing-fan-article {
         font-size: 25px; } }
+    .writing-fan-main-wrapper .writing-fan-article p {
+      margin: 1em; }
   .writing-fan-main-wrapper .writing-fan-fic-showcase {
     display: flex;
     flex-direction: row;

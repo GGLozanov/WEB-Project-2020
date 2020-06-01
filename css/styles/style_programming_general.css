@@ -79,6 +79,8 @@ img {
     padding: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
+    .programming-general-main-wrapper article p {
+      margin-bottom: 1em; }
   .programming-general-main-wrapper .programming-general-knowledge {
     display: flex;
     flex-flow: column wrap;
