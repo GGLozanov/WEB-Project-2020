@@ -64,9 +64,9 @@ img {
     width: 242px;
     height: 300px;
     max-width: 100%;
-    transition: width 1s, height 1s; }
+    transition: opacity 1s; }
     .programming-general-main-wrapper img:hover {
-      height: 308px; }
+      opacity: 0.5; }
   .programming-general-main-wrapper h1 {
     text-align: center;
     font-size: 45px;

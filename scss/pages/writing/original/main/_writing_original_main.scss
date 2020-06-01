@@ -16,6 +16,15 @@
     
     h1 {
         font-size: 40px;
+
+        @include respond-to-width-screen-size(llg) {
+            font-size: 25px;
+        }
+
+        @include respond-to-width-screen-size(sm) {
+            font-size: 15px;
+        }
+
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
     }
@@ -23,12 +32,30 @@
     article {
         text-align: center;
         font-size: 25px;
+
+        @include respond-to-width-screen-size(llg) {
+            font-size: 15px;
+        }
+
+        @include respond-to-width-screen-size(sm) {
+            font-size: 10px;
+        }
+
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
     }
 
     .writing-original-header {
         font-size: 50px;
+
+        @include respond-to-width-screen-size(llg) {
+            font-size: 30px;
+        }
+
+        @include respond-to-width-screen-size(sm) {
+            font-size: 15px;
+        }
+
         text-align: start;
         color: white;
         margin: 1em;
@@ -39,9 +66,18 @@
         flex-direction: row;
         justify-content: left;
 
+        @include respond-to-width-screen-size(llg) {
+            flex-direction: column;
+        }
+
         .writing-original-article {
             text-align: start;
             font-size: 30px;
+            
+            @include respond-to-width-screen-size(llg) {
+                font-size: 20px;
+            }
+
             padding: 0 2em 2em 1em;
             margin-right: 1em;
         }
@@ -52,6 +88,16 @@
             width: 600px;
             height: 200px;
             padding-right: 1em;
+
+            transition: opacity 1s;
+            &:hover {
+                opacity: 0.65;
+            }
+
+            @include respond-to-width-screen-size(lg) {
+                width: 400px;
+                height: 200px;
+            }
         }
     }
 
@@ -60,6 +106,10 @@
         flex-direction: row;
         justify-content: space-evenly;
     
+        @include respond-to-width-screen-size(llg) {
+            flex-flow: column wrap;
+        }
+
         margin: 1em;
         padding: 0 1em;
     
@@ -70,9 +120,13 @@
         div {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            
+            justify-content: space-evenly;  
+
             margin: 0 3em 3em 3em;
+
+            @include respond-to-width-screen-size(llg) {
+                margin: 0 1em 2em 0;
+            }
     
             a {
                 margin-bottom: 1em;
@@ -81,6 +135,12 @@
             img {
                 max-width: 100%;
                 padding: 1em;
+
+                transition: opacity 1s;
+
+                &:hover {
+                    opacity: 0.65;
+                }
             }
 
         }   

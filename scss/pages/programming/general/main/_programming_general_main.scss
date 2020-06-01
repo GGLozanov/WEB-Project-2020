@@ -19,10 +19,11 @@
         width: 242px;
         height: 300px;
         max-width: 100%;
-        transition: width 1s, height 1s;
+
+        transition: opacity 1s;
 
         &:hover {
-            height: 308px;
+            opacity: 0.5;
         }
     }
 
