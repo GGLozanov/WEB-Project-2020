@@ -41,10 +41,6 @@
             font-size: 10px;
         }
 
-        p {
-            margin: 1em;
-        }
-
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
     }
@@ -84,16 +80,21 @@
 
             padding: 0 2em 2em 1em;
             margin-right: 1em;
+
+            p {
+                margin: 0 0 1em 1em;
+            }
         }
 
         img {
             display: block;
             max-width: 100%;
-            width: 600px;
+            width: 650px;
             height: 200px;
             padding-right: 1em;
 
             transition: opacity 1s;
+
             &:hover {
                 opacity: 0.65;
             }

@@ -79,8 +79,6 @@ img {
     @media (max-width: 28em) {
       .writing-original-main article {
         font-size: 10px; } }
-    .writing-original-main article p {
-      margin: 1em; }
   .writing-original-main .writing-original-header {
     font-size: 50px;
     text-align: start;
@@ -107,10 +105,12 @@ img {
       @media (max-width: 70em) {
         .writing-original-main .writing-original-main-article .writing-original-article {
           font-size: 20px; } }
+      .writing-original-main .writing-original-main-article .writing-original-article p {
+        margin: 0 0 1em 1em; }
     .writing-original-main .writing-original-main-article img {
       display: block;
       max-width: 100%;
-      width: 600px;
+      width: 650px;
       height: 200px;
       padding-right: 1em;
       transition: opacity 1s; }
