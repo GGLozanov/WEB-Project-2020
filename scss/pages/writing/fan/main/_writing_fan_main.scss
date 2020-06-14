@@ -93,21 +93,57 @@
 
         background: $general-nav-sub-sub-sub-list-color;
 
-        h1 {
-            font-size: 75px;
-            padding: 10px;
-
-            @include respond-to-width-screen-size(lg) {
-                font-size: 35px;
-                padding: 0px;
-                font-family: none;
-            }
+        h2, a {
+            text-decoration: none;
             color: white;
             text-align: center;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 35px;
+            padding: 5px;
         }
 
-        h2 {
+        .writing-fan-oneshot-header, .writing-fan-longfic-header {
+            text-align: center;
+
+            a {
+                font-size: 75px;
+                padding: 10px;
+
+                @include respond-to-width-screen-size(lg) {
+                    font-size: 35px;
+                    padding: 0px;
+                    font-family: none;
+                }
+
+                transition: opacity 1s;
+
+                &:hover {
+                    opacity: 0.45;
+                }
+            }
+
+        }
+
+        .writing-fan-ALWUT-header, .writing-fan-AfTBY-header, .writing-fan-AUA-header {
+            text-align: center;
+
+            a {
+                @include respond-to-width-screen-size(lg) {
+                    font-size: 25px;
+                    padding: 0px;
+                    font-family: none;
+                }
+
+                transition: opacity 1s;
+
+                &:hover {
+                    opacity: 0.45;
+                }
+            }
+        }
+
+        .writing-fan-ALWUT-header a, .writing-fan-AfTBY-header a, .writing-fan-AUA-header a {
             font-size: 45px;
             padding: 3px;
             
@@ -116,10 +152,6 @@
                 padding: 0px;
                 font-family: none;
             }
-
-            color: white;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         article {

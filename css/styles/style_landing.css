@@ -113,16 +113,15 @@ img {
     .landing-burger-menu {
       display: block; } }
 
-h1 {
+h2 {
   text-align: left;
   font-size: 50px;
   font-stretch: condensed;
   padding: 10px;
-  margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white; }
   @media (max-width: 40em) {
-    h1 {
+    h2 {
       font-size: 22px; } }
 
 .landing-main-wrapper {
@@ -143,8 +142,6 @@ h1 {
     @media (max-width: 60em) {
       .landing-main-wrapper .landing-main-content {
         flex-direction: column; } }
-    .landing-main-wrapper .landing-main-content .landing-main-header {
-      padding: 10px; }
     .landing-main-wrapper .landing-main-content .landing-main-article {
       text-align: left;
       font-size: 24px;
@@ -155,6 +152,8 @@ h1 {
       color: white; }
       .landing-main-wrapper .landing-main-content .landing-main-article p {
         padding-bottom: 10px; }
+      .landing-main-wrapper .landing-main-content .landing-main-article .landing-main-header {
+        padding: 10px; }
     .landing-main-wrapper .landing-main-content .landing-main-portfolio-image {
       padding: 40px; }
 
@@ -192,9 +191,6 @@ h1 {
   .landing-writing .landing-writing-content {
     display: flex;
     flex-direction: column; }
-    @media (max-width: 40em) {
-      .landing-writing .landing-writing-content .landing-writing-header {
-        margin-left: none; } }
     .landing-writing .landing-writing-content .landing-writing-article {
       text-align: left;
       font-size: 24px;
@@ -205,6 +201,9 @@ h1 {
       color: white; }
       .landing-writing .landing-writing-content .landing-writing-article p {
         padding-bottom: 10px; }
+      @media (max-width: 40em) {
+        .landing-writing .landing-writing-content .landing-writing-article .landing-writing-header {
+          margin-left: none; } }
   .landing-writing .landing-writing-image {
     width: 35%;
     margin: 0px 50px 50px 50px; }

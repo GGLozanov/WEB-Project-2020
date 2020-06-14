@@ -69,7 +69,7 @@ img {
     color: white; }
   .programming-projects-main-wrapper article {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     padding: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
@@ -82,7 +82,7 @@ img {
     .programming-projects-main-wrapper .programming-projects-titular div {
       display: flex;
       flex-flow: column wrap;
-      background: #07C38B;
+      background: #193c37;
       padding: 1em; }
     .programming-projects-main-wrapper .programming-projects-titular .programming-projects-tuespairs * {
       align-self: center;
@@ -91,7 +91,7 @@ img {
       color: black; }
     .programming-projects-main-wrapper .programming-projects-titular .programming-projects-tuespairs article {
       color: black;
-      padding: 0px 10em 0px 10em; }
+      padding: 0px 5em 0px 5em; }
       @media (max-width: 40em) {
         .programming-projects-main-wrapper .programming-projects-titular .programming-projects-tuespairs article {
           padding: 0px; } }
@@ -135,7 +135,8 @@ img {
         width: 310px;
         height: 310px; }
     .programming-projects-main-wrapper .programming-projects-secondary .programming-projects-hacktues {
-      border-left: 10px solid #1A1A1D; }
+      border-left: 10px solid;
+      border-color: #1A1A1D; }
       @media (max-width: 40em) {
         .programming-projects-main-wrapper .programming-projects-secondary .programming-projects-hacktues {
           border-left: none; } }

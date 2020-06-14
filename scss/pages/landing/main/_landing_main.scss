@@ -1,7 +1,7 @@
 @import "../../../abstracts/variables";
 @import "../../../abstracts/mixins";
 
-h1 {
+h2 {
     text-align: left;
     font-size: 50px;
 
@@ -11,7 +11,6 @@ h1 {
 
     font-stretch: condensed;
     padding: 10px;
-    margin-left: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
@@ -40,10 +39,6 @@ h1 {
         @include respond-to-width-screen-size(lg) {
             flex-direction: column;
         }
-
-        .landing-main-header {
-            padding: 10px;
-        }
     
         .landing-main-article {
             text-align: left;
@@ -55,6 +50,10 @@ h1 {
             color: white;
             p {
                 padding-bottom: 10px;
+            }
+            
+            .landing-main-header {
+                padding: 10px;
             }
         }
     
@@ -108,13 +107,7 @@ h1 {
 
     .landing-writing-content {
         display: flex;
-        flex-direction: column;
-
-        .landing-writing-header {
-            @include respond-to-width-screen-size(med) {
-                margin-left: none;
-            }            
-        }
+        flex-direction: column;         
         .landing-writing-article {
             text-align: left;
             font-size: 24px;
@@ -126,6 +119,11 @@ h1 {
             p {
                 padding-bottom: 10px;
             }
+            .landing-writing-header {
+                @include respond-to-width-screen-size(med) {
+                    margin-left: none;
+                }
+            }  
         }
     }
         

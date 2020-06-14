@@ -112,25 +112,43 @@ img {
     @media (max-width: 60em) {
       .writing-fan-main-wrapper .writing-fan-fic-showcase {
         flex-direction: column; } }
-    .writing-fan-main-wrapper .writing-fan-fic-showcase h1 {
-      font-size: 75px;
-      padding: 10px;
+    .writing-fan-main-wrapper .writing-fan-fic-showcase h2, .writing-fan-main-wrapper .writing-fan-fic-showcase a {
+      text-decoration: none;
       color: white;
       text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif; }
-      @media (max-width: 60em) {
-        .writing-fan-main-wrapper .writing-fan-fic-showcase h1 {
-          font-size: 35px;
-          padding: 0px;
-          font-family: none; } }
-    .writing-fan-main-wrapper .writing-fan-fic-showcase h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      font-size: 35px;
+      padding: 5px; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-oneshot-header, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-longfic-header {
+      text-align: center; }
+      .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-oneshot-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-longfic-header a {
+        font-size: 75px;
+        padding: 10px;
+        transition: opacity 1s; }
+        @media (max-width: 60em) {
+          .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-oneshot-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-longfic-header a {
+            font-size: 35px;
+            padding: 0px;
+            font-family: none; } }
+        .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-oneshot-header a:hover, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-longfic-header a:hover {
+          opacity: 0.45; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-ALWUT-header, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AfTBY-header, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AUA-header {
+      text-align: center; }
+      .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-ALWUT-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AfTBY-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AUA-header a {
+        transition: opacity 1s; }
+        @media (max-width: 60em) {
+          .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-ALWUT-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AfTBY-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AUA-header a {
+            font-size: 25px;
+            padding: 0px;
+            font-family: none; } }
+        .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-ALWUT-header a:hover, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AfTBY-header a:hover, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AUA-header a:hover {
+          opacity: 0.45; }
+    .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-ALWUT-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AfTBY-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AUA-header a {
       font-size: 45px;
-      padding: 3px;
-      color: white;
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      padding: 3px; }
       @media (max-width: 60em) {
-        .writing-fan-main-wrapper .writing-fan-fic-showcase h2 {
+        .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-ALWUT-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AfTBY-header a, .writing-fan-main-wrapper .writing-fan-fic-showcase .writing-fan-AUA-header a {
           font-size: 25px;
           padding: 0px;
           font-family: none; } }

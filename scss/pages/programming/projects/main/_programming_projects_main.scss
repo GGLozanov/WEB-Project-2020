@@ -28,7 +28,7 @@
 
     article {
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         padding: 1em;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
@@ -47,7 +47,7 @@
             display: flex;
             flex-flow: column wrap;
 
-            background: $general-card-color;
+            background: $secondary-card-color;
             padding: 1em;
         }
 
@@ -62,7 +62,7 @@
         
             article {
                 color: black;
-                padding: 0px 10em 0px 10em;
+                padding: 0px 5em 0px 5em;
                 @include respond-to-width-screen-size(med) {
                     padding: 0px;
                 }
@@ -132,7 +132,8 @@
         }
 
         .programming-projects-hacktues {
-            border-left: 10px solid $general-bg-color;
+            border-left: 10px solid;
+            border-color: $general-bg-color;
             
             @include respond-to-width-screen-size(med) {
                 border-left: none;

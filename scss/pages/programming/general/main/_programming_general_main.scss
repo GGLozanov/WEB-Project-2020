@@ -91,6 +91,7 @@
         flex-flow: column wrap;
         flex: 1;
         padding: 2em;
+        border-left: 10px solid $general-bg-color;
         background-color: $general-main-color;
 
         .programming-general-interests-tech {
@@ -120,8 +121,6 @@
             } 
         }
 
-        
-        border-left: 10px solid $general-bg-color;
         @include respond-to-width-screen-size(med) {
             border-left: none;
         }

@@ -113,8 +113,8 @@ img {
     flex-flow: column wrap;
     flex: 1;
     padding: 2em;
-    background-color: #4E4E50;
-    border-left: 10px solid #1A1A1D; }
+    border-left: 10px solid #1A1A1D;
+    background-color: #4E4E50; }
     .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech {
       display: flex;
       flex-direction: column; }
