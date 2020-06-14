@@ -56,7 +56,8 @@ img {
   overflow-x: hidden;
   padding: 2em;
   margin: 2em;
-  border: solid 10px;
+  border: 10px solid;
+  border-radius: 5px;
   background-color: #341018; }
   .writing-fan-main-wrapper hr {
     display: block;

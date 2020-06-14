@@ -132,7 +132,7 @@
         }
 
         .programming-projects-hacktues {
-            border-left: solid 10px $general-bg-color;
+            border-left: 10px solid $general-bg-color;
             
             @include respond-to-width-screen-size(med) {
                 border-left: none;

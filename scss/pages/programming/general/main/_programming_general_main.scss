@@ -93,11 +93,6 @@
         padding: 2em;
         background-color: $general-main-color;
 
-        border-left: solid 10px $general-bg-color;
-        @include respond-to-width-screen-size(med) {
-            border-left: none;
-        }
-
         .programming-general-interests-tech {
             display: flex;
             flex-direction: column;
@@ -123,6 +118,12 @@
                 }
                 justify-content: space-evenly;
             } 
+        }
+
+        
+        border-left: 10px solid $general-bg-color;
+        @include respond-to-width-screen-size(med) {
+            border-left: none;
         }
     }
 

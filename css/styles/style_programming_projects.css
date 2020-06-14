@@ -135,7 +135,7 @@ img {
         width: 310px;
         height: 310px; }
     .programming-projects-main-wrapper .programming-projects-secondary .programming-projects-hacktues {
-      border-left: solid 10px #1A1A1D; }
+      border-left: 10px solid #1A1A1D; }
       @media (max-width: 40em) {
         .programming-projects-main-wrapper .programming-projects-secondary .programming-projects-hacktues {
           border-left: none; } }

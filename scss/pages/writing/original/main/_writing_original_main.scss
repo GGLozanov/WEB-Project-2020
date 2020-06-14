@@ -4,8 +4,8 @@
 .writing-original-main {
 
     background: $general-nav-sub-sub-list-color;
-    border: solid 10px;
-    border-radius: 10px;
+    border: 10px solid;
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@
         margin: 1em;
         padding: 0 1em;
     
-        border: solid 10px;
+        border: 10px solid;
         border-radius: 10px;
         background: $secondary-card-color;
 

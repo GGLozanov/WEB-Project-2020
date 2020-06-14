@@ -131,8 +131,8 @@ h1 {
   width: 98%;
   margin: 20px;
   background-color: #4E4E50;
-  border: double;
-  border-radius: 20px; }
+  border: 10px solid;
+  border-radius: 5px; }
   @media (max-width: 40em) {
     .landing-main-wrapper {
       width: 90%; } }

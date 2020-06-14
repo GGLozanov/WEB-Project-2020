@@ -29,9 +29,8 @@ h1 {
     margin: 20px;
     background-color: $general-main-color;
 
-    border: double;
-
-    border-radius: 20px;
+    border: 10px solid;
+    border-radius: 5px;
 
     .landing-main-content {
         display: flex;

@@ -114,10 +114,7 @@ img {
     flex: 1;
     padding: 2em;
     background-color: #4E4E50;
-    border-left: solid 10px #1A1A1D; }
-    @media (max-width: 40em) {
-      .programming-general-main-wrapper .programming-general-interests {
-        border-left: none; } }
+    border-left: 10px solid #1A1A1D; }
     .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech {
       display: flex;
       flex-direction: column; }
@@ -137,6 +134,9 @@ img {
         @media (max-width: 40em) {
           .programming-general-main-wrapper .programming-general-interests .programming-general-interests-tech .programming-general-interests-tech-brands {
             flex-flow: column wrap; } }
+    @media (max-width: 40em) {
+      .programming-general-main-wrapper .programming-general-interests {
+        border-left: none; } }
 
 .programming-general-footer {
   text-align: center;

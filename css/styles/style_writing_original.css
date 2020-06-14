@@ -51,8 +51,8 @@ img {
 
 .writing-original-main {
   background: #341018;
-  border: solid 10px;
-  border-radius: 10px;
+  border: 10px solid;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -126,7 +126,7 @@ img {
     justify-content: space-evenly;
     margin: 1em;
     padding: 0 1em;
-    border: solid 10px;
+    border: 10px solid;
     border-radius: 10px;
     background: #193c37; }
     @media (max-width: 70em) {
