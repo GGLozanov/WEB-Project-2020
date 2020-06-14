@@ -3,4 +3,11 @@ Portfolio website for programming and writing. Uses a Gulp setup, SCSS, and HTML
 
 # Site Screenshots
 ![Homepage](https://i.imgur.com/fIkKN27.png)
-![](https://i.imgur.com/s9CEJCm.png)
+---
+![General Programming](https://imgur.com/EIckQsy.png)
+---
+![Programming Projects](https://imgur.com/Pdckm3C.png)
+---
+![Fanfic Writing](https://i.imgur.com/s9CEJCm.png)
+---
+![Original Writing](https://imgur.com/nYpDL2Z.png)
